@@ -28,6 +28,7 @@ public class mathutil1 {
         //illigalArgumentExeption 
         //tham so >20, tham so <0
         System.out.println("expected: IlligalArgumentException" + MathUltility.getFactorial(-5));
+        System.out.println("i want to see the red or green");
     }
   //Minh muon ket luan ham ngon, minh phai test het cac truong hop xai ham
     //truong hop 5! )! -5! 21! 20! ... 
