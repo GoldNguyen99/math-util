@@ -28,22 +28,33 @@ public class MathUltility {
     //giai thua tang cuc nhanh, 21! long khong chua duoc
     //bai nay minh se chan giai thua tu 0...20
     //am hoac 21 chu ko them tinh
+//    public static long getFactorial(int n){
+//        if(n < 0||n>20)
+//            throw new IllegalArgumentException("n must be between 0...20");
+//        if(n==0 || n==1)
+//            return 1; //dac biet, return luon
+//        //dua nao viet else o day la tru diem
+//        //mac nhien cpu den duoc day la hieu rang n=2..20
+//        long result =1;
+//        for(int i = 2; i<=n; i++){
+//            result *=i;
+//        }
+//        
+//        
+//        
+//        return result;
+//viet bang đệ quy cho PRO
+         
     public static long getFactorial(int n){
         if(n < 0||n>20)
-            throw new IllegalArgumentException("n must be between 0...20");
-        if(n==0 || n==1)
-            return 1; //dac biet, return luon
-        //dua nao viet else o day la tru diem
-        //mac nhien cpu den duoc day la hieu rang n=2..20
-        long result =1;
-        for(int i = 2; i<=n; i++){
-            result *=i;
-        }
-        
-        
-        
-        return result;
+            throw new IllegalArgumentException("n must be betwwen 0..20");
+        if(n ==0||n==1)
+            return 1; // điều kiện dừng
+        return n*getFactorial(n-1); //de quy
+        //goi lai chinh ham cua minh voi 1 quy mo khac, n-1
+        //di mai se ve 1
     }
+    
    
     
     
