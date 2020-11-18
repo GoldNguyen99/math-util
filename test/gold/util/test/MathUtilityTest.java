@@ -42,7 +42,7 @@ public class MathUtilityTest {
         assertEquals(120, getFactorial(5));
         assertEquals(24, getFactorial(4));
         assertEquals(720, getFactorial(6));
-        assertEquals(0, getFactorial(0));
+        assertEquals(1, getFactorial(0));
         //vietsub: tinh dum tui 5! coi no co la 120 hem?
         //no co thi bao mau xanh, ko thi bao do~ .
         
